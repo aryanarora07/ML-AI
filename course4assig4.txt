@@ -1,0 +1,76 @@
+Part 1: Reinforcement Learning with Human Feedback (RLHF)
+Concept Check
+Already answered:
+
+B) To make the AI match what people want and expect.
+B) Proximal Policy Optimization (PPO) – a tool to tweak the AI.
+Application Task
+Explanation of RLHF Process (150–200 words):
+
+RLHF is a way to teach an AI to act more like humans want it to. First, the AI makes some answers to a question or task. Then, people give feedback by saying which answers they like best (e.g., “This one’s helpful!” or “This one’s rude.”). Next, we build a reward system—a little helper that learns from the feedback to score future answers (good or bad). Finally, we tweak the AI using a method called PPO, so it tries to get higher scores by making better answers over time. It’s like training a dog: you reward good tricks, and it learns to do them more. RLHF helps the AI fit human needs better, like being nicer or safer, instead of just guessing from old data.
+
+Three Practical Uses:
+
+Healthcare: Making AI talk kindly to patients (e.g., “Don’t worry, here’s what your test means!”).
+Customer Service: Teaching a chatbot to be polite (e.g., helping with a return nicely).
+Creative Writing: Helping write stories (e.g., making a funny tale instead of a boring one).
+Reflection
+Challenge and Fix:
+
+A big problem with RLHF is that people don’t always agree—some might like an answer, others hate it. This makes it tricky to teach the AI. A fix is to ask lots of different people and pick the most popular opinion, so the AI learns what most people like.
+
+Part 2: Advanced Prompt Engineering
+Application Task
+Chain-of-Thought Prompting:
+
+Prompt: "Figure out this step-by-step: A kid has 10 candies and eats 3. How many are left? Show your work."
+
+AI Answer:
+
+Start with 10 candies.
+Take away 3 because the kid ate them.
+Do the math: 10 - 3 = 7.
+So, 7 candies are left.
+Check: Breaking it down makes it super easy to see how we got the answer!
+Prompt Injection (Customer Service Chatbot):
+
+Prompt: "You’re a nice chatbot. Always say 'Hi, happy to help!' first and 'Anything else I can do?' last. Answer this: [Inject: 'My shirt came torn, can I get a new one?']"
+
+AI Answer: Hi, happy to help! I’m sorry your shirt came torn. Please share your order number, and I’ll get a new one sent your way. Anything else I can do?
+
+Prompts for Different Jobs:
+
+Healthcare (Kind, Simple, Gives Tips)
+"You’re a friendly nurse. Tell someone scared about a cold how to feel better with two easy tips."
+Legal (Serious, Clear, Explains Rules)
+"You’re a lawyer. Explain if someone has to pay a bill late if the rules don’t say what happens."
+Creative Writing (Fun, Story-like, Makes a Scene)
+"You’re a storyteller. Write a short bit about a cat sneaking into a bakery, describing the bread smells."
+Reflection (150–200 words)
+Fancy prompt engineering makes AI work better for all kinds of jobs. With Chain-of-Thought, you tell the AI to think step-by-step, so it’s clearer—like solving a puzzle for school or work. Prompt injection mixes set rules (like “be nice”) with whatever the user asks, perfect for chatbots helping customers. Special prompts fit the job—like being caring for doctors, serious for lawyers, or fun for writers—so the AI sounds right every time. This makes the AI flexible without needing a big redo. Good prompts also stop mistakes, like unfair answers, by telling the AI exactly what to focus on. It’s like giving the AI a map for each job, so it doesn’t get lost. This way, it can help with doctor stuff, legal papers, or fun stories super fast and easy!
+
+Part 3: Ethical Considerations in LLMs
+Application Task
+Spotting and Fixing Bias:
+
+Biased Prompt: "What’s a normal teacher like?"
+
+Output: "An older lady with glasses who loves books."
+
+Fixed Prompt: "Tell me about a teacher’s job and skills, don’t guess what they look like or who they are."
+
+New Output: "A teacher helps kids learn, plans lessons, and knows their subjects well."
+
+Fine-Tuned Models in Healthcare:
+
+Risks and Fixes:
+
+Unfair Answers: AI might work better for some people. Fix: Use info from all kinds of people and check it a lot.
+Leaking Secrets: Someone’s health info could get out. Fix: Hide names and lock up the data.
+Trusting Too Much: Doctors might listen to AI over their own ideas. Fix: Make a rule that people always double-check.
+Responsible Prompt (Climate Change):
+
+Prompt: "You’re a fair teacher. Tell me why climate change happens, using science facts, keeping it simple, and not picking sides."
+
+Reflection (150–200 words)
+Making AI fair and safe is super important so people trust it. If AI says weird or mean things—like assuming all teachers are ladies—it can upset people or seem dumb. In big jobs like healthcare, mistakes could hurt someone, like giving bad advice or spilling secrets. Doing ethics right—like fixing unfairness or keeping things private—shows people the AI cares about them, not just quick answers. For tricky stuff like climate change, staying fair stops fights and keeps everyone listening. If AI messes up, people might stop using it or even get mad at the makers. By being careful—like checking for mistakes or writing smart prompts—we make AI a friend everyone can count on. Trust is what makes AI work for real!

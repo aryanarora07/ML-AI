@@ -1,0 +1,61 @@
+Task Definition
+Objective and Significance:
+
+The goal is to build a customer service chatbot that handles queries efficiently, provides accurate information, and improves customer satisfaction. This is important because it can reduce response times, manage multiple queries at once, and save costs for companies, enhancing customer experience.
+
+Real-World Relevance:
+
+Many businesses, like e-commerce platforms and banks, use chatbots to manage customer interactions, making it a practical and widely applicable solution.
+
+Model Selection
+Chosen Model: "Azure Chat AI v2" from Microsoft.
+
+Why It Fits: It’s designed for conversational AI, perfect for chatbots, with high accuracy in understanding and generating responses.
+Unexpected Detail: It allows fine-tuning with company data, ensuring responses match the brand’s voice, which is crucial for customer trust.
+Alternatives Considered: GPT-3.5 Turbo from OpenAI (powerful but general) and DialoGPT from Hugging Face (open-source but less supported).
+Management Process
+Organization and Labeling: Labeled as "Customer Service Chatbot - v1" initially, updated to "- v2" after tweaks.
+Version Control: Tracked changes like training updates, allowing reversion if needed.
+Collaboration: Invited team members to Azure AI Studio, assigned roles for data prep and testing, using tools for feedback.
+Solution Development
+Input Data Preparation: Gathered customer service chats, cleaned them, and formatted for the model.
+Model Integration: Deployed in Azure AI Studio, fine-tuned with data, and linked to a web chat interface.
+Output Evaluation: Tested with humans rating responses (relevance 4.2/5, accuracy 4.0/5) and tracked 85% correct query handling, 15% escalations.
+Evaluation Results
+Metrics: 85% queries handled correctly, 15% needed human help, with good human ratings.
+Challenges: Struggled with unclear queries, keeping conversation context, and staying updated with company info.
+Future Improvements
+Improve handling of tricky queries by asking clarifying questions.
+Add memory to track past chat parts for better context.
+Set up automatic updates with new company data and collect user feedback for tweaks.
+Comprehensive Survey Note on Building an AI Solution with Azure AI Studio Model Catalog
+This project focuses on designing and implementing an AI solution using a pre-trained model from the Azure AI Studio Model Catalog, specifically for building a customer service chatbot. The process involves defining the task, selecting and managing the model, developing the solution, evaluating its performance, and suggesting future enhancements. Below, we detail each step, ensuring a thorough understanding for beginners and professionals alike.
+
+Task Definition: Objective, Significance, and Real-World Relevance
+The objective is to create a customer service chatbot that efficiently handles customer queries, provides accurate information, and enhances customer satisfaction. This is significant because automating customer service can reduce response times, manage multiple queries simultaneously, and provide consistent information, leading to improved customer experience and cost savings for the company. Many businesses, such as e-commerce platforms and banks, rely on chatbots for managing customer interactions, making this a practical and widely applicable solution. For instance, a retail company could use the chatbot to handle refund requests, while a bank might use it for account balance inquiries, demonstrating its versatility across industries.
+
+Exploring and Selecting the Model from the Catalog
+We browsed the Azure AI Studio Model Catalog and selected "Azure Chat AI v2" from Microsoft for this task. This model was chosen based on its design for conversational AI, which aligns perfectly with the chatbot's needs. It has high performance metrics, such as accuracy in understanding and generating natural language responses, making it suitable for customer service interactions. Additionally, its customizability allows fine-tuning with company-specific data, ensuring responses match the brand’s voice and policies, which is crucial for building customer trust. Alternatives considered included GPT-3.5 Turbo from OpenAI, known for its general-purpose power but potentially more expensive, and DialoGPT from Hugging Face, which is open-source but may lack the same level of support in Azure AI Studio. The selection of "Azure Chat AI v2" was justified by its task alignment, strong performance, and ease of integration within the Azure ecosystem.
+
+Managing the Model in Azure AI Studio
+Effective model management is essential for project success. We organized and labeled the model as "Customer Service Chatbot - v1" initially, updating to "- v2" after fine-tuning with company data for easy identification. Version control was implemented to track changes, such as model training iterations and dataset updates, allowing us to revert to previous versions if needed, ensuring stability and flexibility. Collaboration was facilitated by inviting team members to the project in Azure AI Studio, assigning roles for data preparation, model training, and evaluation. We used collaboration tools for communication and feedback, ensuring a cohesive team effort and avoiding duplication of work, which enhanced productivity and teamwork.
+
+Developing the AI Solution
+The development process involved three key steps:
+
+Input Data Preparation: We collected a dataset of customer service interactions from the company's records, ensuring diversity to cover various query types. The data was cleaned and formatted to include user queries and corresponding responses, preparing it for the model to learn from effectively.
+Model Integration: The "Azure Chat AI v2" model was deployed in Azure AI Studio, configured with the prepared dataset for fine-tuning to tailor it to our specific needs. It was then integrated with a web-based chat interface for testing and deployment, making it accessible for user interactions.
+Output Evaluation: We assessed the model’s performance through human evaluations, where team members interacted with the chatbot and rated its responses for relevance and accuracy on a scale of 1 to 5, achieving averages of 4.2/5 for relevance and 4.0/5 for accuracy. We also collected metrics, finding that 85% of queries were handled correctly, with a 15% escalation rate to human agents, providing a comprehensive view of its effectiveness.
+Evaluating the Solution and Identifying Challenges
+Evaluation results showed promising performance, with 85% query handling accuracy and good human ratings, indicating the chatbot’s potential to enhance customer service. However, challenges included handling complex or ambiguous queries, where the chatbot sometimes provided incorrect responses, and maintaining conversation context over multiple turns, which was inconsistent at times. Ensuring that all responses are up-to-date with the latest company information required constant monitoring and updates, adding to the maintenance effort. These limitations highlight areas for improvement to ensure reliability and user satisfaction.
+
+Future Improvements and Recommendations
+To enhance the solution, we propose the following:
+
+Improve Handling of Ambiguous Queries: Implement intent classification to better understand user queries and provide options or ask clarifying questions when queries are unclear, reducing the risk of incorrect responses.
+Enhance Conversation Context Management: Use memory mechanisms to track previous interactions in a conversation, ensuring continuity, and train the model with more data that includes multi-turn conversations to improve context awareness.
+Automated Updates: Develop a system to automatically update the model with new company information, scheduling regular retraining sessions with fresh data to keep the model current and relevant.
+User Feedback Loop: Implement a mechanism to collect user feedback on chatbot responses, using this feedback to further fine-tune the model and improve its performance over time, aligning it more closely with customer needs.
+These improvements aim to address the identified challenges, ensuring the chatbot becomes more robust, reliable, and user-friendly, ultimately enhancing its effectiveness in real-world customer service applications.
+
+This project demonstrates the power of leveraging pre-trained models from the Azure AI Studio Model Catalog, combined with effective management and development practices, to create a valuable AI solution. The process highlights the importance of aligning model selection with task needs, managing resources efficiently, and continuously evaluating and improving the solution to meet evolving requirements.

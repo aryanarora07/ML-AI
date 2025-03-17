@@ -1,0 +1,55 @@
+Part 1: Fundamentals of Prompt Flow
+Concept Check
+
+What is the purpose of prompt flow in LLM applications?
+A) To design how inputs are structured and processed
+Prompt flow orchestrates executable flows with LLMs, prompts, and Python tools, enabling structured input processing and output generation.
+
+Which feature of Azure supports prompt flow testing?
+A) Integrated Debugging
+Azure’s prompt flow provides debugging features to trace interactions and iterate flows efficiently.
+
+Application Task
+To build an LLM application with prompt flow:
+
+Define the use case (e.g., customer support chatbot).
+
+Identify inputs (user queries), prompts (instructions for the LLM), and outputs (generated responses).
+
+Integrate APIs like Azure OpenAI for LLMs and Serp API for external data.
+
+Part 2: Building LLM Applications
+Case Study Activity
+Prototype for a Content Generation Tool
+
+Input Nodes: User topic (e.g., "AI in healthcare").
+
+Model Nodes: LLM (e.g., GPT-4) generates a blog post draft.
+
+Output Nodes: Display the draft to the user.
+
+Reflection
+Designing the flow involved challenges like ensuring prompt clarity and handling diverse topics. Azure’s visual editor simplified debugging and iteration, while built-in evaluation tools helped refine the prompts for better output quality.
+
+Part 3: Monitoring and Maintaining LLM Applications
+Concept Check
+
+Monitoring ensures application performance and helps identify potential issues.
+True
+Monitoring tracks metrics like latency and error rates, ensuring optimal performance.
+
+Version control is not necessary for maintaining LLM applications.
+False
+Version control is crucial for tracking prompt changes and maintaining consistency.
+
+Reflection Activity
+Monitoring metrics like latency and error rates helps identify bottlenecks and improve user experience. For example, high latency can delay responses, while error rates indicate issues in prompt design or model behavior. Azure’s monitoring tools, such as Azure AI endpoints, provide real-time insights and facilitate continuous improvement.
+
+Summary
+This assignment covers:
+
+The structure and purpose of prompt flow in LLM applications.
+
+Designing and prototyping LLM applications using Azure’s tools.
+
+Monitoring and maintaining LLM applications for optimal performance.
